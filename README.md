@@ -22,13 +22,12 @@ Javascript based Custom Dropdown plugin to style the HTML Select tag.
   
 ### What I learned
 
-* Click event propagation
-* Bind events on Native Select element and Cosmetic Select Wrapper
+* How to dispatch custom JS Events cross-browser
 
 ### Todos
 
- - Cross Browser Testing
- - Optimizing JS
+ - Cross Browser Testing (Done)
+ - Optimizing JS (In progress)
  - Enhancing UI
  - Option to enable/disable on mobile and tablet
 
