@@ -7,8 +7,8 @@ Javascript based Custom Dropdown plugin to style the HTML Select tag.
   ![Custom Dropdown Demo](demo.gif)
 
 ### How to use this plugin
-* Add js & css files (custom select)
-* Wrap select tag with div.custom-select
+* Step 1) Add js & css files (custom select)
+* Step 2) Wrap select tag with div.custom-select
 ```
 <div class="custom-select">
   <select>
@@ -17,6 +17,16 @@ Javascript based Custom Dropdown plugin to style the HTML Select tag.
     <option>Option 1</option>
   </select>
 </div>
+```
+
+### How to change/reset the option dynamically
+* Step 1) Pass the number (startong from 0) on "selectedIndex" (i.e. selectedIndex = 2; //it will change selected option to 3rd option)
+* Step 2) And dispatch the event (i.e. ELEMENT.dispatchEvent(event))
+
+```
+var select = document.getElementsByTagName("select")[0]
+select.selectedIndex = 0;
+select.dispatchEvent(event)
 ```
 
   
