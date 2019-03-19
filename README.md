@@ -20,7 +20,7 @@ Javascript based Custom Dropdown plugin to style the HTML Select tag.
 ```
 
 ### How to change/reset the option dynamically
-* Step 1) Pass the number (startong from 0) on "selectedIndex" (i.e. selectedIndex = 2; //it will change selected option to 3rd option)
+* Step 1) Pass the number (startong from 0) on "selectedIndex" (i.e. ELEMENT.selectedIndex = 2; //it will change selected option to 3rd option)
 * Step 2) And dispatch the event (i.e. ELEMENT.dispatchEvent(event))
 
 ```
