@@ -39,6 +39,20 @@ if (selectTags) {
         selectParent.classList.add('custom-select-initialized');
     };
 
+    var deleteCustomSelect = function deleteCustomSelect(selectTag) {
+        var select = selectTag
+        var selectLabel = select.nextElementSibling
+        var selectDdl = selectLabel.nextElementSibling
+        select.parentNode.removeChild(selectLabel)
+        select.parentNode.removeChild(selectDdl)
+    }
+
+    var reGenerateCustomSelect = function reGenerateCustomSelect(selectTag) {
+        deleteCustomSelect(selectTag)
+        generateCustomSelect(selectTag)
+        selectTag.onchange = selectChange
+    }
+
     var closeAllSelect = function closeAllSelect(elem) {
         var i = void 0,
             arrNo = [];
