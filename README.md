@@ -28,7 +28,15 @@ var select = document.getElementsByTagName("select")[0]
 select.selectedIndex = 0;
 select.dispatchEvent(event)
 ```
-
+### How to regenerate/delete custom select element
+* Step 1) Regenerate CustomSelect
+```
+reGenerateCustomSelect(ELEMENT)
+```
+* Step 2) Delete CustomSelect
+```
+reGenerateCustomSelect(ELEMENT)
+```
   
 ### What I learned
 
@@ -38,8 +46,9 @@ select.dispatchEvent(event)
 
  - Cross Browser Testing (Done)
  - Optimizing JS (In progress)
- - Enhancing UI
- - Option to enable/disable on mobile and tablet
+ - Enhancing UI (Done)
+ - Option to enable/disable on mobile and tablet (Done)
+ - Convert it into Reactjs plugin (To do)
 
 License
 ----
